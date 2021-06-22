@@ -3,8 +3,15 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
+define mc = Character("[povname]")
 
+define m = Character("Mitch")
+
+define s = Character("Stephan")
+
+define o = Character("Ollie")
+
+#######################
 
 # The game starts here.
 
@@ -19,6 +26,26 @@ label start:
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
+
+
+    ## PLAYER NAME INPUT: ##
+    #####################
+
+    python:
+        povname = renpy.input("What's your name?")
+
+        povname = povname.strip()
+
+        # .strip() removes any accidental extra spaces.
+
+        if not povname:
+            povname = "Mona"
+
+    mc "My name is [povname]."
+
+    ######################
+
+
 
     show eileen happy
 
