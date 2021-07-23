@@ -62,39 +62,39 @@ label start:
         mc "{i}I officially have a Bachelor's degree in...{/i}{w} (choice doesn't matter)"
 
         "Anthropology":
-            $ major == "anthropology"
+            $ major = "Anthropology"
             jump picked_major
 
         "Engineering":
-            $ major == "engineering"
+            $ major = "Engineering"
             jump picked_major
 
         "Music":
-            $ major == "music"
+            $ major = "Music"
             jump picked_major
 
         "Fine Arts":
-            $ major == "fine arts"
+            $ major = "Fine Arts"
             jump picked_major
 
         "Literature":
-            $ major == "literature"
+            $ major = "Literature"
             jump picked_major
 
         "Mathematics":
-            $ major == "mathematics"
+            $ major = "Mathematics"
             jump picked_major
 
         "Computer Science":
-            $ major == "computer science"
+            $ major = "Computer Science"
             jump picked_major
 
 
 label picked_major:
 
-    mc "{i}I officially have a Bachelor's degree in [major], and now...{w} I'll be thrown out into the world, I guess.{/i}"
+    mc "{i}I officially have a Bachelor's in [major]. And now... I'll be thrown out into the world, I guess.{/i}"
 
-    mc "{i}A job? What's that?{w} You're supposed to start applying as soon as fall breaks and it's back to winter.{w} But I don't know what it was, I just couldn't do that.{/i}"
+    mc "{i}A job? What's that?{w} People usually start applying as soon as fall breaks and it's back to winter, but I don't know what it was, I just couldn't do that.{/i}"
 
     mc "{i}I didn't know enough about my direction or future at that point to start taking that step.{/i}"
 
@@ -115,14 +115,10 @@ label picked_major:
     # some sort of transition. fade?
 
     mc "I've decided, at least for this summer, that I'm going to take it slow."
-
-    mc "It's my first summer of real {b}{i}freedom{/b}{/i}— I'm gonna try not to rush myself."
-
-    mc "I'm going to work part-time, stay in town, save up and just take some time to clear my head before taking my next step."
-
-    mc "If I'm on the verge of starting life's next big chapter, I don't think it's bad to spend some time appreciating this one before I turn that big page."
-
-    mc "Spend time to reflect, take time for myself, and maybe just figure out my direction."
+    mc "It's my first summer of real {i}freedom{/i}— I'm gonna try not to rush myself."
+    mc "I'm going to work part-time, stay in town, save up, and just take some time to clear my head before taking the next step."
+    mc "If I'm on the verge of starting life's next big chapter, I think it's fine to appreciate the time I still have in this one before I finally turn the page."
+    mc "Take some time to reflect, time for myself, and maybe just to figure out my direction."
 
     # fade out
 
@@ -143,7 +139,7 @@ label prologue_stephan:
     zoo "Right. So you want to... work at the petting zoo?"
 
     "{i}I don't know what it is, but the way he said that felt weird. Judgy?{/i}"
-    "{/i}That doesn't seem right, considering...{w} this is HIS petting zoo...{/i}"
+    "{i}That doesn't seem right, considering...{w} this is HIS petting zoo...{/i}"
 
     mc "Uh, yeah.{w} Is there... a problem?"
 
