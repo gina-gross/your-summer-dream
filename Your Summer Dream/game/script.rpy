@@ -88,13 +88,7 @@ label start:
 
 label picked_major:
 
-    scene
-    show mona overjoyed
-
-    mc "{i}I officially have a Bachelor's in [major]. And now...{nw}"
-    show mona anxious
-    extend "I'll be thrown out into the world, I guess.{/i}"
-
+    mc "{i}I officially have a Bachelor's in [major]. And now... I'll be thrown out into the world, I guess.{/i}"
 
     mc "{i}A job? What's that?{w} People usually start applying as soon as fall breaks and it's back to winter, but I don't know what it was, I just couldn't do that.{/i}"
 
@@ -110,15 +104,24 @@ label picked_major:
 
     mc "{i}I'll achieve just fine at some point, I know that, but after the final push of finishing school, I just need to...{w} regroup. Take a breath.{/i}"
 
-    # cg - something else?
+    scene
 
-    # mona sprite appears
+    show mona neutral
 
     # some sort of transition. fade?
 
     mc "I've decided, at least for this summer, that I'm going to take it slow."
+
+    # mona sprite: closed eyes, small smile, "anxious" eyebrows
+
     mc "It's my first summer of real {i}freedom{/i}— I'm gonna try not to rush myself."
+
+    show mona happy
+
     mc "I'm going to work part-time, stay in town, save up, and just take some time to clear my head before taking the next step."
+
+    # show mona determined
+
     mc "If I'm on the verge of starting life's next big chapter, I think it's fine to appreciate the time I still have in this one before I finally turn the page."
     mc "Take some time to reflect, time for myself, and maybe just to figure out my direction."
 
@@ -131,8 +134,10 @@ label picked_major:
 label prologue_stephan:
 
     # fade in - scene @ petting zoo desk
+    scene #petting zoo
+    with fade
 
-    # mona sprite?
+    show mona awk laugh
 
     mc "Um, yeah, the name's [mcname]. We talked on the phone?"
 
