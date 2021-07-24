@@ -104,19 +104,21 @@ label picked_major:
 
     mc "{i}I'll achieve just fine at some point, I know that, but after the final push of finishing school, I just need to...{w} regroup. Take a breath.{/i}"
 
+    #############################################################
+
     scene
 
-    show mona neutral
+    show mona neutral smile
     # some sort of transition. fade?
     mc "I've decided, at least for this summer, that I'm going to take it slow."
 
-    # mona sprite: closed eyes, small smile, "anxious" eyebrows
+    show mona thoughtful
     mc "It's my first summer of real {i}freedom{/i}— I'm gonna try not to rush myself."
 
     show mona happy
     mc "I'm going to work part-time, stay in town, save up, and just take some time to clear my head before taking the next step."
 
-    # show mona determined
+    show mona determined
     mc "If I'm on the verge of starting life's next big chapter, I think it's fine to appreciate the time I still have in this one before I finally turn the page."
     mc "Take some time to reflect, time for myself, and maybe just to figure out my direction."
 
@@ -132,7 +134,7 @@ label prologue_stephan:
     scene #petting zoo
     with fade
 
-    show mona awk laugh
+    show mona earnest talking
     mc "Um, yeah, the name's [mcname]. We talked on the phone?"
 
     show stephan neutral
@@ -142,9 +144,12 @@ label prologue_stephan:
     "{i}I don't know what it is, but the way he said that felt weird. Judgy?{/i}"
     "{i}That doesn't seem right, considering...{w} this is HIS petting zoo...{/i}"
 
-    # mona sprite: "awkward" eyebrows, small smile
-    mc "Uh, yeah.{w} Is there... a problem?"
+    show mona earnest
+    mc "Uh, yeah.{nw}"
+    show mona nervous laugh
+    extend "Is there... a problem?"
 
+    show stephan neutral
     zoo "Oh, no. I'm just used to working alone."
     # "i just haven't worked with many people outside my family"? idk
 
@@ -169,7 +174,7 @@ label prologue_stephan:
 
     "He looks at me, perhaps pointedly?"
 
-    show mona awk laugh # use the alternate awk laugh sprite here too
+    show mona intrigued talking
     mc "Or... part-timer?"
 
     show stephan neutral
@@ -177,19 +182,19 @@ label prologue_stephan:
 
     "There's a silence."
 
-    show mona happy # use happy sprite with "anxious" eyebrows
+    show mona intrigued
     mc "So... I'll just be working with you?"
 
     show stephan neutral
     zoo "Well, you'll still be working with the local farmers and other points of contact here."
 
-    show mona neutral # maybe different sprite choice?
+    show mona neutral smile
     mc "But as far as the day-to-day goes? Working with the animals and the guests?"
 
     show stephan neutral
     zoo "Yes."
 
-    show mona amused
+    show mona very happy
     mc "Sounds fun."
 
     "I smile to him, not being sarcastic. He doesn't seem too impressed."
@@ -220,7 +225,7 @@ label prologue_stephan:
     s "Well, alright then. But I see you don't have previous experience working with animals, so you'll have to go through training as well as learning how we run."
     s "And I'm certain we'll be requested for several events during the summer, so as those approach, I'll have to prepare you for them as well."
 
-    show mona happy
+    show mona amused
     mc "Sounds good."
 
     "I smile again, trying to show that I'm eager."
@@ -228,7 +233,7 @@ label prologue_stephan:
     show stephan neutral
     s "..."
 
-    # show mona happy (talking) with upturned ("anxious") eyebrows
+    show mona nervous laugh
     mc "...I look forward to it."
 
     show stephan neutral
@@ -240,9 +245,9 @@ label prologue_stephan:
     show stephan confused
     s "..."
 
-    show mona happy
+    show mona thinking
     mc "..."
-    show mona confused
+    show intrigued talking
     mc "...Mr. Kaur?"
 
     "I can't tell if calling him by his first came off to him as too informal or familiar. But I mean, we're basically going to be coworkers."
@@ -260,7 +265,7 @@ label prologue_stephan:
     "{i}Wow, thanks! That was super helpful and totally clear and now I TOTALLY know the right thing to call you. \*Sighs\*{/i}"
     # ^ rewrite this?
 
-    show mona awk laugh # alternate awk laugh sprite -- almost like a sweat-drop kinda thing
+    show mona awk laugh sweat drop
     mc "Uh... thanks..... Mr. Kaur?"
 
     "That still feels weird, but I'm just playing it safe."
@@ -317,7 +322,7 @@ label prologue_stephan:
     s "Thanks for what?"
     #raised eyebrow or whatever
 
-    show mona awk laugh
+    show mona nervous laugh
     mc "Uh, I dunno... Showing me the ropes and everything?"
     "{i}I don't know, I'm just being polite, dude! Just say \"no problem\" or \"see you tomorrow\" or something!"
 
@@ -328,7 +333,7 @@ label prologue_stephan:
 
     "{i}God, this fucking guy.{/i} Whatever."
 
-    show mona unimpressed
+    show mona unimpressed # annoyed sprite?
     mc "Ugh, whatever."
     show mona neutral
     mc "So when I'm able to work in the enclosure, will we take turns working there and in the front?"
