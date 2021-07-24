@@ -26,10 +26,8 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
-
-    ## PLAYER NAME INPUT: ##
-    #####################
+    ########################################################
+    ## PLAYER NAME INPUT ##
 
     python:
         mcname = renpy.input("What's your name?")
@@ -43,15 +41,13 @@ label start:
 
     mc "My name is [mcname]."
 
-    ######################
+    ########################################################
+    ## STORY START - PROLOGUE ##
 
-    ##########################
-    # STORY START - PROLOGUE #
+    scene cg grad day
+    with fade
 
-
-    # scene grad day
-
-    "{i}Congratulations, class of 2021!{/i}"
+    "{i}Congratulations, class of 20XX!{/i}"
 
     "{b}Everyone{/b}" "Hurray!"
 
@@ -92,7 +88,13 @@ label start:
 
 label picked_major:
 
-    mc "{i}I officially have a Bachelor's in [major]. And now... I'll be thrown out into the world, I guess.{/i}"
+    scene
+    show mona overjoyed
+
+    mc "{i}I officially have a Bachelor's in [major]. And now...{nw}"
+    show mona anxious
+    extend "I'll be thrown out into the world, I guess.{/i}"
+
 
     mc "{i}A job? What's that?{w} People usually start applying as soon as fall breaks and it's back to winter, but I don't know what it was, I just couldn't do that.{/i}"
 
