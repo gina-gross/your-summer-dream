@@ -107,21 +107,16 @@ label picked_major:
     scene
 
     show mona neutral
-
     # some sort of transition. fade?
-
     mc "I've decided, at least for this summer, that I'm going to take it slow."
 
     # mona sprite: closed eyes, small smile, "anxious" eyebrows
-
     mc "It's my first summer of real {i}freedom{/i}— I'm gonna try not to rush myself."
 
     show mona happy
-
     mc "I'm going to work part-time, stay in town, save up, and just take some time to clear my head before taking the next step."
 
     # show mona determined
-
     mc "If I'm on the verge of starting life's next big chapter, I think it's fine to appreciate the time I still have in this one before I finally turn the page."
     mc "Take some time to reflect, time for myself, and maybe just to figure out my direction."
 
@@ -138,112 +133,147 @@ label prologue_stephan:
     with fade
 
     show mona awk laugh
-
     mc "Um, yeah, the name's [mcname]. We talked on the phone?"
 
-    # stephan sprite
-
+    show stephan neutral
     zoo "Right. So you want to... work at the petting zoo?"
 
+    "He looks down at the paperwork in front of him nonchalantly."
     "{i}I don't know what it is, but the way he said that felt weird. Judgy?{/i}"
     "{i}That doesn't seem right, considering...{w} this is HIS petting zoo...{/i}"
 
+    # mona sprite: "awkward" eyebrows, small smile
     mc "Uh, yeah.{w} Is there... a problem?"
 
     zoo "Oh, no. I'm just used to working alone."
     # "i just haven't worked with many people outside my family"? idk
 
-    "The zoo supervisor is going through my paperwork, not making much eye contact with me."
+    "The zoo supervisor is going through the papers, not making much eye contact with me."
 
+    show mona alert
     mc "Oh, um... Is there not... other staff?"
 
+    show stephan alert # change this to unimpressed sprite
     zoo "Does it look like a large enterprise?"
 
     "He gestures vaguely around him."
 
+    show stephan neutral
     zoo "We're connected with plenty of folks who regularly come around to help, or check up on the animals, bring hay and feed, etcetera.{w} And of course, we're always connected with the veterinarian."
-    zoo "But the zoo is not exactly rocket science. I'm familiar with these animals. When my parents ran the place I worked here often. I'm comfortable with them and have lots of experience."
+    show stephan annoyed
+    zoo "But the zoo is not exactly rocket science.{nw}"
+    show stephan happy
+    extend "I'm familiar with these animals. When my parents ran the place I worked here often. I'm comfortable with them and have lots of experience."
+    show stephan neutral
     zoo "We might get contracted for a carnival, or a birthday party. It's common in the summer.{w} But really, I handle it myself most of the time. Except for the odd volunteer."
 
     "He looks at me, perhaps pointedly?"
 
+    show mona awk laugh # use the alternate awk laugh sprite here too
     mc "Or... part-timer?"
 
+    show stephan neutral
     zoo "Right."
 
     "There's a silence."
 
+    show mona happy # use happy sprite with "anxious" eyebrows
     mc "So... I'll just be working with you?"
 
+    show stephan neutral
     zoo "Well, you'll still be working with the local farmers and other points of contact here."
 
+    show mona neutral # maybe different sprite choice?
     mc "But as far as the day-to-day goes? Working with the animals and the guests?"
 
+    show stephan neutral
     zoo "Yes."
 
+    show mona amused
     mc "Sounds fun."
 
     "I smile to him, not being sarcastic. He doesn't seem too impressed."
 
-    zoo "...Indeed.{w} Anyway, we'll be working alongside each other, but I'm still your supervisor."
+    show stephan suspicious
+    zoo "...Indeed.{nw}"
+    show stephan neutral
+    extend "Anyway, we'll be working alongside each other, but I'm still your supervisor."
     zoo "My contact information is on your onboarding sheets. Are there any questions?"
 
     "I glance down at the sheets he's handed to me. I see his name: Stephan Kaur."
 
+    show mona happy
     mc "No... I don't think so. We'll cover most of it on my first day, right?"
 
+    show stephan happy
     s "Yes. I'll show you around the enclosure and tell you how to tend to the animals, as well as deal with children, along with the more administrative work."
 
+    show mona overjoyed
     mc "Oh, well, I don't think you have to worry about the children. I love kids, I'm really great with them. I have some experience as a nanny."
 
+    hide mona overjoyed
     "{i}Talking about it makes me think of the last family I worked with, and the children and families I've had some of the longest relationships with.{/i}"
     "{i}It's been a while since the last time I've done it, but I honestly miss it.{/i}"
     "{i}Being a positive influence to children means a lot to me, even if it's small, so I'm looking forward to working with kids again this summer.{/i}"
 
+    show stephan neutral
     s "Well, alright then. But I see you don't have previous experience working with animals, so you'll have to go through training as well as learning how we run."
     s "And I'm certain we'll be requested for several events during the summer, so as those approach, I'll have to prepare you for them as well."
 
+    show mona happy
     mc "Sounds good."
 
     "I smile again, trying to show that I'm eager."
 
+    show stephan neutral
     s "..."
 
+    # show mona happy (talking) with upturned ("anxious") eyebrows
     mc "...I look forward to it."
 
+    show stephan neutral
     s "...Alright. Well, we'll be in contact. I'll see you on your first day."
 
+    show mona very happy
     mc "Alright. Thank you, Stephan!"
 
-    # stephan sprites -- confused face or something idk
-
+    show stephan confused
     s "..."
 
+    show mona happy
     mc "..."
+    show mona confused
     mc "...Mr. Kaur?"
 
     "I can't tell if calling him by his first came off to him as too informal or familiar. But I mean, we're basically going to be coworkers."
     "He's like, not that much older than me, so calling him \"Mr. Kaur\" just feels kind of weird. But I mean hey, if he prefers that I'll absolutely be respectful."
 
+    show stephan annoyed
     s "...{w} ...Ah, forget it."
+    show stephan intrigued
     s "I'd rather correct you to \"Mr. Kaur\", but then when I was about to say it, it sounded just as odd."
+    show stephan confused talking
     s "Those who've worked here have been family, and it's not like I've had many \"subordinates\". So there's no precedent I'm used to,{w} though referring to my first name seems inappropriately comfortable."
+    show stephan amused
     s "But forget it, it's not like this is corporate. It ultimately doesn't matter. I can't really bother to come up with a preferred way to refer to me, so just do what you'd like."
 
     "{i}Wow, thanks! That was super helpful and totally clear and now I TOTALLY know the right thing to call you. \*Sighs\*{/i}"
     # ^ rewrite this?
 
+    show mona awk laugh # alternate awk laugh sprite -- almost like a sweat-drop kinda thing
     mc "Uh... thanks..... Mr. Kaur?"
 
     "That still feels weird, but I'm just playing it safe."
 
+    show stephan happy
     "Mr. Kaur?" "Sure."
 
+    hide stephan happy
     "I turn around and walk away from Mr. Kaur (Stephan?) at the zoo's front booth, feeling a little awkward."
     "{i}Ah, whatever. The zoo guy's pretty stuffy, but it's going to be fine. I mean, it's a petting zoo— how hard can it be, and also, I feel like my more-chipper personality is a way better fit than... whatever he is!{/i}"
     "{i}Working with him might be a bit of a learning curve but other than that, I know I'm gonna do great. Working with the animals is going to be fun, too.{/i}"
 
-    # scene - street or whatever
+    scene # street or whatever
 
     "Before I head back to my apartment, I take a moment to look at my surroundings."
     "{i}This is where I'll be spending most of my time this summer, huh?{/i}"
@@ -262,7 +292,7 @@ label prologue_stephan:
     "Just being around a California beach in the summer is gonna rub off on me and make me want to go outside more, and hell, the beach will be a perfect place to take my breaks or hang out after my shifts."
     "Even if I spend the summer busy doing nothing, I think it's gonna be great."
 
-    #########
+    #######################################
     #fade
     # a few days later
 
@@ -273,42 +303,52 @@ label prologue_stephan:
     "Stephan shows me around the chickens, goats, and rabbits. He shows me how to handle them— the right ways to pick them up, right and wrong ways to feed them, how to read the behavior, blah blah blah."
     "The admin stuff is pretty simple— working at the front, handling tickets and customers, knowing the calendar, knowing how to balance the number of people in the enclosure at a time."
 
+    show stephan neutral
     s "For your first several shifts I'll keep you at the front. Talking to customers and handling admission."
     s "We'll spend more time with the animals after close, and I'll train you on that throughout the week. Once you have the hang of that you can start working in the enclosure."
 
     "{i}Bleh, I don't really want to spend time off the clock working on more training.{i}"
     "But whatever, an extra hour or whatever each day to spend time with the animals sounds kinda fun."
 
+    show mona happy
     mc "Awesome! Thanks so much."
 
+    show stephan intrigued
     s "Thanks for what?"
     #raised eyebrow or whatever
 
+    show mona awk laugh
     mc "Uh, I dunno... Showing me the ropes and everything?"
     "{i}I don't know, I'm just being polite, dude! Just say \"no problem\" or \"see you tomorrow\" or something!"
 
     "He just looks confused."
 
+    show stephan neutral
     s "Well, yes, it's the job."
 
     "{i}God, this fucking guy.{/i} Whatever."
 
+    show mona unimpressed
     mc "Ugh, whatever."
+    show mona neutral
     mc "So when I'm able to work in the enclosure, will we take turns working there and in the front?"
 
+    show stephan neutral
     s "Yes. Really, I'll deal with whatever needs more attention and give you the other. I'll also call you for assistants or tasks whenever it's needed."
 
+    show mona happy
     mc "Okay, sounds good."
 
     "{i}Kind of boring, but really doesn't sound too demanding. I think the work will be straightforward, it sounds like he'll deal with the stuff that's actually hard. That's pretty nice.{/i}"
 
+    show stephan happy
     s "Well then, let's open up."
 
     "He turns with a little smile as he unlocks the door and pushes it open. He flips the sign out front from \"closed\" to \"open\", and heads back toward the enclosure while I man the front."
 
     jump prologue_mitchell
 
-    ###############################
+    ##########################################################
 
 label prologue_mitchell:
 
