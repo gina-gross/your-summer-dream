@@ -124,7 +124,7 @@ label picked_major:
     show mona happy
     mc "I'm going to work part-time, stay in town, save up, and just take some time to clear my head before taking the next step."
 
-    show mona determined
+    show mona looking down smile
     mc "If I'm on the verge of starting life's next big chapter, I think it's fine to appreciate the time I still have in this one before I finally turn the page."
     mc "Take some time to reflect, time for myself, and maybe just to figure out my direction."
 
@@ -167,7 +167,7 @@ label prologue_stephan:
     mc "Oh, um... Is there not... other staff?"
 
     hide mona
-    show stephan neutral # change this to unimpressed sprite
+    show stephan unimpressed
     zoo "Does it look like a large enterprise?"
 
     "He gestures vaguely around him."
@@ -214,7 +214,7 @@ label prologue_stephan:
     "I smile to him, not being sarcastic. He doesn't seem too impressed."
 
     hide mona
-    show stephan suspicious
+    show stephan unimpressed talking
     zoo "...Indeed."
     show stephan neutral
     zoo "Anyway, we'll be working alongside each other, but I'm still your supervisor."
@@ -369,7 +369,7 @@ label prologue_stephan:
     "{i}God, this fucking guy.{/i} Whatever."
 
     hide stephan
-    show mona unimpressed # annoyed sprite?
+    show mona annoyed
     mc "Ugh, whatever."
     show mona neutral
     mc "So when I'm able to work in the enclosure, will we take turns working there and in the front?"
