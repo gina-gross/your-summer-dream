@@ -125,7 +125,7 @@ label picked_major:
     mc "I'm going to work part-time, stay in town, save up, and just take some time to clear my head before taking the next step."
 
     show mona looking down smile
-    mc "If I'm on the verge of starting life's next big chapter, I think it's fine to appreciate the time I still have in this one before I finally turn the page."
+    mc "If I'm on the verge of starting life's next big chapter, I think it's fine to appreciate the time I still have in this one before finally turning the page."
     mc "Take some time to reflect, time for myself, and maybe just to figure out my direction."
 
     # fade out
@@ -140,7 +140,7 @@ label prologue_stephan:
     scene #petting zoo
     with fade
 
-    show mona earnest talking
+    show mona earnest
     mc "Um, yeah, the name's [mcname]. We talked on the phone?"
 
     hide mona
@@ -149,7 +149,7 @@ label prologue_stephan:
 
     "He looks down at the paperwork in front of him nonchalantly."
     "{i}I don't know what it is, but the way he said that felt weird. Judgy?{/i}"
-    "{i}That doesn't seem right, considering...{w} this is HIS petting zoo...{/i}"
+    "{i}That doesn't seem right, considering... this is HIS petting zoo...{/i}"
 
     hide stephan
     show mona nervous laugh
@@ -168,7 +168,7 @@ label prologue_stephan:
 
     hide mona
     show stephan unimpressed
-    zoo "Does it look like a large enterprise?"
+    zoo "Does this look like a particularly large enterprise?"
 
     "He gestures vaguely around him."
 
@@ -211,6 +211,7 @@ label prologue_stephan:
     show mona very happy
     mc "Sounds fun."
 
+    show mona happy
     "I smile to him, not being sarcastic. He doesn't seem too impressed."
 
     hide mona
@@ -228,19 +229,23 @@ label prologue_stephan:
 
     hide mona
     show stephan happy
-    s "Yes. I'll show you around the enclosure and tell you how to tend to the animals, as well as deal with children, along with the more administrative work."
+    s "Yes. I'll show you around the enclosure and tell you how to tend to the animals as well as dealing with children, along with more administrative work."
 
     hide stephan
     show mona overjoyed
     mc "Oh, well, I don't think you have to worry about the children. I love kids, I'm really great with them. I have some experience as a nanny."
 
-    hide mona
+    scene #nannying cg
+    with fade
     "{i}Talking about it makes me think of the last family I worked with, and the children and families I've had some of the longest relationships with.{/i}"
     "{i}It's been a while since the last time I've done it, but I honestly miss it.{/i}"
     "{i}Being a positive influence to children means a lot to me, even if it's small, so I'm looking forward to working with kids again this summer.{/i}"
 
+    scene # back to previous scene
+    with fade
+
     show stephan neutral
-    s "Well, alright then. But I see you don't have previous experience working with animals, so you'll have to go through training as well as learning how we run."
+    s "Well, alright then. But I see you don't have previous experience working with animals, so you'll have to go through training as well as learning how the zoo runs."
     s "And I'm certain we'll be requested for several events during the summer, so as those approach, I'll have to prepare you for them as well."
 
     hide stephan
@@ -270,19 +275,20 @@ label prologue_stephan:
     s "..."
 
     hide stephan
-    show mona thinking # change to a better sprite
+    show mona confused # change to a better sprite
     mc "..."
     show mona intrigued talking
     mc "...Mr. Kaur?"
 
     "I can't tell if calling him by his first came off to him as too informal or familiar. But I mean, we're basically going to be coworkers."
-    "He's not that much older than me, so calling him \"Mr. Kaur\" just seems weird. But I mean hey, if he prefers it I'll absolutely be respectful."
+    "He's not that much older than me, so calling him \"Mr. Kaur\" just seems weird. But I mean hey, if he prefers that, I'll absolutely be respectful."
 
     hide mona
     show stephan annoyed
     s "...{w}Ah, forget it."
+    "He exhales."
     show stephan intrigued
-    s "I'd rather correct you to \"Mr. Kaur\", but when I was about to say it, it still sounded odd."
+    s "I'd rather correct you to \"Mr. Kaur\", but when I was about to say it, it sounded just as odd."
     show stephan confused talking
     s "Those who've worked here have been family, and it's not like I've had many \"subordinates\". So there's no precedent I'm used to,{w} though referring to my first name seems inappropriately comfortable."
     show stephan amused
@@ -295,6 +301,7 @@ label prologue_stephan:
     show mona awk laugh sweat drop
     mc "Uh... thanks..... Mr. Kaur?"
 
+    show mona awk sweat drop
     "That still feels weird, but I'm just playing it safe."
 
     hide mona
@@ -310,7 +317,7 @@ label prologue_stephan:
 
     "Before I head back to my apartment, I take a moment to look at my surroundings."
     "{i}This is where I'll be spending most of my time this summer, huh?{/i}"
-    "Admittedly, I can be kind of a homebody, even when it's summer. Living in Hawthorne, CA, it's almost blasphemous."
+    "Admittedly I can be kind of a homebody, even when it's summer. Living in Hawthorne, CA, it's almost blasphemous."
     "It's a total beach town, with gorgeous (but ugh, HOT) summers, and most of the folks around here are practically glued to their boards as soon as the weather's nice enough."
 
     "The petting zoo I applied to is close to the beach; most of its business when there isn't a festival or something comes from people on the boardwalk."
@@ -328,7 +335,8 @@ label prologue_stephan:
     "Even if I spend the summer busy doing nothing, I think it's gonna be great."
 
     #######################################
-    #fade
+    scene # some bg
+    with fade
     # a few days later
 
     "After a few days, it's my first shift. Mr. Kaur— Stephan?— closed the place up for a little while so he could show me around."
@@ -397,11 +405,12 @@ label prologue_stephan:
 label prologue_mitchell:
 
     scene #view from desk
+    with fade
 
     "Some time passes just talking with families, handing stickers to kids, y'know, the usual."
     "It's not just families and kids that come to the booth; there's a good number of teens and people my age who come to the beach with their friends and stop in."
     "At one point, a dude-bro looking group of guys around my age come by the booth, holding their surfboards and joking around amongst themselves."
-    "People like that make me a little self conscious— I'm not \"uncool\" or anything, in fact, I think I have a pretty solid personal brand— but being around overtly \"cool-looking\" people, I can't help but feel like I need to act a certain way."
+    "People like that make me a little self conscious— I'm not \"uncool\" or anything; in fact, I think I have a pretty solid personal brand— but being around overtly \"cool-looking\" people, I can't help but feel like I need to act a certain way."
 
     "{i}What are they gonna do, take you out back for a freakin' swirly? Obviously not, jeez.{/i}"
     "But still, I feel a little under the microscope when gaggles of obviously popular kids come 'round and start talking to me."
@@ -435,20 +444,20 @@ label prologue_mitchell:
     show mona awk laugh sweat drop
     mc "I like your... shorts?"
 
+    show mona awk
     "I had to peer over the desk a little to be able to actually see anyone's legs. He's wearing, like... deck shorts, but I like the color."
 
     hide mona
     show mitchell intrigued # maybe amused or happy sprite instead?
     dude "Hey, thanks."
 
-    show mitchell neutral smile
     "He smiles at me."
     "{i}Man, people this straightforwardly confident get me kind of on edge. I can't tell if I'm acting like a fool or if they're actually just being nice.{/i}"
 
     hide mitchell
     "He looks back behind him for a second, mentally counting the heads of his friend group. He turns back around to me."
 
-    show mitchell pleasant surprise # is there a better sprite for this?
+    show mitchell neutral smile # is there a better sprite for this?
     dude "Uh, can we have six tickets?"
 
     hide mitchell
@@ -488,7 +497,7 @@ label prologue_mitchell:
     mc "Alright Mitchell, well thanks for coming by the zoo. Your group should be able to go in pretty soon, about 5-10 minutes."
 
     hide mona
-    show mitchell very happy
+    show mitchell very happy # make new sprite -- smiling with teeth
     "He gives me a bright smile before heading towards the bench with his friends. I awkwardly smile back."
 
     hide mitchell
@@ -563,7 +572,8 @@ label prologue_mitchell:
 
 label prologue_ollie:
 
-    # scene - mona at desk
+    scene # mona at desk
+    with fade
 
     "I while away the next few hours at the desk,{w} conferring with the flowers, consulting with the breeze..."
     "...Sorry, starting that sentence made me think of the Wizard of Oz. But really, the rest of the day goes by without much incident."
