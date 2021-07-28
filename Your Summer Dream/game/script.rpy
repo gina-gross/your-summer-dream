@@ -412,56 +412,86 @@ label prologue_mitchell:
 
     "This \"you know I had to do it to 'em\"-looking dude comes up to the booth, with a group of about five friends behind him."
 
-    # mitchell sprite
 
+    show mitchell happy
     dude "Hey, little tomboy."
 
-    mc "...{w} Excuse me?"
+    hide mitchell
+    show mona confused
+    mc "...{w} Excuse me?"  # mona confused sprite? awk laugh sweat drop?
     "{i}I don't mean it like I'm offended, I'm just... what does that even mean??{/i}"
 
     "The guy laughed a little, affably."
 
-    dude "Oh, sorry. You just reminded me of something.{w} I like your shirt."
+    hide mona
+    show mitchell cheerful
+    dude "Oh, sorry. You just reminded me of something."
+    show mitchell neutral smile
+    dude "I like your shirt."
 
+    hide mitchell
+    show mona nervous smile
     mc "Uh, thanks."
+    show mona awk laugh sweat drop
     mc "I like your... shorts?"
 
     "I had to peer over the desk a little to be able to actually see anyone's legs. He's wearing, like... deck shorts, but I like the color."
 
+    hide mona
+    show mitchell intrigued # maybe amused or happy sprite instead?
     dude "Hey, thanks."
 
+    show mitchell neutral smile
     "He smiles at me."
     "{i}Man, people this straightforwardly confident get me kind of on edge. I can't tell if I'm acting like a fool or if they're actually just being nice.{/i}"
 
+    hide mitchell
     "He looks back behind him for a second, mentally counting the heads of his friend group. He turns back around to me."
 
+    show mitchell pleasant surprise # is there a better sprite for this?
     dude "Uh, can we have six tickets?"
 
+    hide mitchell
+    show mona happy
     mc "Um, sure. You guys will have to wait a little bit since you're a larger group."
+    show mona neutral smile
     mc "If you just wait over there for a few minutes, I'll call you over when we're ready."
 
     "I point to a nearby bench outside, our unofficial waiting area."
 
+    hide mona
+    show mitchell happy
     dude "Sweet. Thanks."
 
+    hide mitchell
     "He turns back to his friends, getting ticket fare from everyone before turning to hand the money to me."
 
+    show mitchell happy
     dude "Here you go."
 
     "I take the money, punching into the till and printing off the tickets."
 
+    hide mitchell
+    show mona neutral smile
     mc "Alright, here you go."
 
     "I hand him off the tickets."
 
     mc "What name should I call for you guys?"
 
+    hide mona
+    show mitchell neutral smile
     dude "Mitchell's fine."
 
+    hide mitchell
+    show mona happy
     mc "Alright Mitchell, well thanks for coming by the zoo. Your group should be able to go in pretty soon, about 5-10 minutes."
 
+    hide mona
+    show mitchell very happy
     "He gives me a bright smile before heading towards the bench with his friends. I awkwardly smile back."
 
+    hide mitchell
     "{i}(A few minutes later...){/i}"
 
     "I help a group of four parents and their gaggle of kids out of the zoo. The kids are so excited and jumping around; one of the little girls grabs her mom's hand, talking excitedly about the rabbits."
@@ -471,39 +501,58 @@ label prologue_mitchell:
 
     "I open the gate-door-thing by the front desk area, walking out to approach the group. They seem to be happily talking and joking around."
 
+    show mona intrigued talking
     mc "Mitchell?"
 
+    show mona intrigued
     "I can't tell if they heard me. I look around to the friends."
 
+    hide mona
     "Dude Friend" "Hey, Mitch, I think she's talking to you."
 
     "The guy from before was distracted in a conversation, but he quickly turns around."
 
+    show mitchell awk laugh
     m "Oh yeah, hey! Sorry."
 
+    hide mitchell
+    show mona earnest talking
     mc "You guys can go in now."
 
     "He stands up with another bright smile. It seems genuine, but the guy's still a little much."
 
+    hide mona
+    show mitchell overjoyed
     m "Awesome, thanks!"
 
+    hide mitchell
     "I notice that they start looking around at their surfboards, unsure what to do with them."
 
+    show mona neutral smile
     mc "I can keep your boards right behind the desk. Just come back for them once you leave, alright?"
 
+    hide mona
+    show mitchell neutral smile
     m "Excellent. Thanks. Hey, I'll help walk them up with you."
 
+    hide mitchell
+    show mona happy
     mc "Alright, thanks."
 
     "I smile, appreciative of the help. I'm definitely kinda small; it would have taken me a couple trips to carry them all."
+    hide mona
     "I take two boards under my arms while he grabs the others. We walk back up toward the desk, where I open the gate with my foot and we place the boards up against the wall. I dust off my hands."
 
+    show mona happy
     mc "Alright, well, I hope y'all have fun. Stephan should be able to help you if you guys have any questions while you're there."
 
     "Mitchell smiles at me again. I guess it must naturally just be bright. I guess I'm a little more used to it now after constant exposure, and it's a little endearing."
 
+    hide mona
+    show mitchell very happy
     m "Thanks, [mcname]."
 
+    hide mitchell
     "I'm immediately caught off guard by that. I realize he's looking towards my shirt, and I look down—{w} Oh, my name tag... duh..."
     "I guess that mental calculation took enough time that I couldn't come back with some witty response, not that I had one."
     "When I look back up he's out of my desk area, giving me one last wave as he turns back to follow his friends towards the enclosure."
