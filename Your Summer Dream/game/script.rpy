@@ -52,7 +52,7 @@ label start:
     "{b}Everyone{/b}" "Hurray!"
 
     mc "{i}Wow, the day has finally come."
-    mc "{i}After what felt like forever, I've finally graduated university, class of 20XX."
+    mc "{i}After what felt like forever, I've finally graduated university— class of 20XX."
 
     menu:
         mc "{i}I officially have a Bachelor's degree in...{/i} (choice doesn't matter)"
@@ -92,7 +92,7 @@ label picked_major:
 
     mc "{i}A job? What's that?{/i}"
 
-    mc "{i}People usually start applying as soon as fall breaks and it's back to winter, but I don't know what it was, I just couldn't do that.{/i}"
+    mc "{i}People usually start applying as soon as fall breaks and back to winter, but I don't know what it was, I just couldn't do that.{/i}"
 
     mc "{i}I didn't know enough about my direction or future at that point to start taking that step.{/i}"
 
@@ -100,7 +100,7 @@ label picked_major:
 
     mc "{i}It's not that I don't have ambitions. Or that I don't see a strong future for myself. I really do."
 
-    mc "{i}To be honest, when I'm finally prepared and I put myself to it, I know that I'll kick total ass.{/i}"
+    mc "{i}To be honest, when I'm finally prepared and I put myself to it, I know I'll kick total ass.{/i}"
 
     mc "{i}It's just... I'm not there yet, even though maybe I should be.{/i}"
 
@@ -280,7 +280,7 @@ label prologue_stephan:
     show mona intrigued talking
     mc "...Mr. Kaur?"
 
-    "I can't tell if calling him by his first came off to him as too informal or familiar. But I mean, we're basically going to be coworkers."
+    "I can't tell if calling him by his first name came off to him as too informal or familiar. But I mean, we're basically going to be coworkers."
     "He's not that much older than me, so calling him \"Mr. Kaur\" just seems weird. But I mean hey, if he prefers that, I'll absolutely be respectful."
 
     hide mona
@@ -317,7 +317,7 @@ label prologue_stephan:
 
     "Before I head back to my apartment, I take a moment to look at my surroundings."
     "{i}This is where I'll be spending most of my time this summer, huh?{/i}"
-    "Admittedly I can be kind of a homebody, even when it's summer. Living in Hawthorne, CA, it's almost blasphemous."
+    "Admittedly I can be kind of a homebody, even when it's summer— living here in Hawthorne, sometimes it feels almost blasphemous."
     "It's a total beach town, with gorgeous (but ugh, HOT) summers, and most of the folks around here are practically glued to their boards as soon as the weather's nice enough."
 
     "The petting zoo I applied to is close to the beach; most of its business when there isn't a festival or something comes from people on the boardwalk."
@@ -332,7 +332,7 @@ label prologue_stephan:
 
     "Anyway, even if I won't exactly be spending by time on the beach while I'm working, it'll be nice just to be around the lively people and salty air."
     "Just being around a California beach in the summer is gonna rub off on me and make me want to go outside more, and hell, the beach will be a perfect place to take my breaks or hang out after my shifts."
-    "Even if I spend the summer busy doing nothing, I think it's gonna be great."
+    "Even if I spend the summer busy doin' nothing, I think it's gonna be great."
 
     #######################################
     scene # some bg
