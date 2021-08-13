@@ -3,7 +3,9 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define mc = Character("[mcname]")
+define mc = Character("[mcname]", image="mona")
+
+image side mona happy = "side_mona_happy.png"
 
 define m = Character("Mitchell")
     # remember to redefine m as "Mitch" when the time comes.
@@ -39,7 +41,7 @@ label start:
         if not mcname:
             mcname = "Mona"
 
-    mc "My name is [mcname]."
+    mc happy "My name is [mcname]."
 
     ########################################################
     ## STORY START - PROLOGUE ##
