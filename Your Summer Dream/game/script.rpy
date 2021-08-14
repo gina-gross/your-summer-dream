@@ -558,7 +558,7 @@ label prologue_ollie:
 
     mc "I didn't know you were here! I guess that's why you're all together, huh?"
 
-    "I gesture at the group. Caroline moved out back while Ollie was in high school, so I don't see them all together around town too much."
+    "I gesture at the group. Caroline moved out back while we were in high school, so I don't see them all together around town too much."
 
     show ollie neutral smile
     o "Yeah, I thought I'd come back."
@@ -579,19 +579,19 @@ label prologue_ollie:
     "Ollie gives a quick laugh."
 
     show ollie awk laugh # different sprite? unsure
-    o "At least for now, yeah, for a little while. While I figure out what's next again."
+    o "At least for now, yeah, for a little while. While I re-figure out what comes next."
     show ollie neutral smile
     o "My sister helped me drive all my stuff."
 
     "He gestures a thumb towards Caroline."
 
     "Caroline" "The big-time was too much for little bro."
-    "Caroline" "I guess he found out that lonely life wasn't so pretty."
+    "Caroline" "I guess the lonely life wasn't so pretty."
 
     show ollie awk sweat drop # or unimpressed?
     o "Ah, shove it."
 
-    "Ollie playfully gives his sister a shove with his shoulder."
+    "Ollie playfully pushes Caroline with his shoulder."
 
     mc very happy "Well, that's awesome. I just graduated but I'm staying in town, I guess also \"at least for now\". I guess I'll see you around??"
 
