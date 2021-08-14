@@ -30,6 +30,8 @@ define m = Character("Mitchell")
     # remember to redefine m as "Mitch" when the time comes.
 define dude = Character("Dude Bro")
 # "dude" is for before we know Mitchell's name.
+define w = Character("Wilson")
+# "w" is for when we think his first name is Wilson.
 
 # Stephan #
 define s = Character("Stephan")
@@ -430,7 +432,6 @@ label prologue_mitchell:
 
     "I take the money, punching into the till and printing off the tickets."
 
-    hide mitchell
     mc neutral smile "Alright, here you go."
 
     "I hand him off the tickets."
@@ -440,7 +441,6 @@ label prologue_mitchell:
     show mitchell neutral smile
     dude "Wilson's fine."
 
-    hide mitchell
     mc happy "Alright Wilson, well thanks for coming by the zoo. Your group should be able to go in pretty soon, about 5-10 minutes."
 
     show mitchell very happy # make new sprite -- smiling with teeth
@@ -454,6 +454,9 @@ label prologue_mitchell:
     "{i}It makes me feel really happy and full seeing those kids so excited...{/i}"
     "I glance around, seeing that group from before sitting by the bench. Oh, right."
 
+    scene cg chap1 mitchell
+    with fade
+
     "I open the gate-door-thing by the front desk area, walking out to approach the group. They seem to be happily talking and joking around."
 
     mc intrigued talking "Wilson?"
@@ -464,24 +467,24 @@ label prologue_mitchell:
 
     "The guy from before was distracted in a conversation, but he quickly turns around."
 
-    show mitchell awk laugh
-    m "Oh yeah, hey! Sorry."
+    # show mitchell awk laugh
+    w "Oh yeah, hey! Sorry."
 
-    hide mitchell
     mc earnest talking "You guys can go in now."
 
     "He stands up with another bright smile. It seems genuine, but the guy's still a little much."
 
-    show mitchell overjoyed
-    m "Awesome, thanks!"
+    scene
 
-    hide mitchell
+    show mitchell overjoyed
+    w "Awesome, thanks!"
+
     "I notice that they start looking around at their surfboards, unsure what to do with them."
 
     mc neutral smile "I can keep your boards right behind the desk. Just come back for them once you leave, alright?"
 
     show mitchell neutral smile
-    m "Excellent. Thanks. Hey, I'll help walk them up with you."
+    w "Excellent. Thanks. Hey, I'll help walk them up with you."
 
     mc happy "Alright, thanks."
 
@@ -490,12 +493,11 @@ label prologue_mitchell:
 
     mc happy "Alright, well, I hope y'all have fun. Stephan should be able to help you if you guys have any questions while you're there."
 
-    "Mitchell smiles at me again. I guess it must naturally just be bright. I guess I'm a little more used to it now after constant exposure, and it's a little endearing."
+    "Wilson smiles at me again. I guess it must naturally just be bright. I guess I'm a little more used to it now after constant exposure, and it's a little endearing."
 
     show mitchell very happy
-    m "Thanks, [mcname]."
+    w "Thanks, [mcname]."
 
-    hide mitchell
     "I'm immediately caught off guard by that. I realize he's looking towards my shirt, and I look down—{w} Oh, my name tag... duh..."
     "I guess that mental calculation took enough time that I couldn't come back with some witty response, not that I had one."
     "When I look back up he's out of my desk area, giving me one last wave as he turns back to follow his friends towards the enclosure."
@@ -506,13 +508,15 @@ label prologue_mitchell:
 
 label prologue_ollie:
 
-    scene # mona at desk
+    scene cg mona desk
     with fade
 
     "I while away the next few hours at the desk,{w} conferring with the flowers, consulting with the breeze..."
     "...Sorry, starting that sentence made me think of the Wizard of Oz. But really, the rest of the day goes by without much incident."
     "There are definitely some slow patches, and other blocks of time where a ton of people come by at once, but either way, it thankfully wasn't too boring."
     "Even when nothing's going on, I can look towards the sprawling beach in front of me, or just people watch, or even take a second to myself to breathe in the fresh salty air. It's kind of nice, really."
+
+    scene
 
     "Work comes to a close, and now it's time to get some animal training from Stephan in the back."
     "The lesson only lasts for about an hour and a half, and as the sun starts to head over the horizon, it's time for us to head home."
