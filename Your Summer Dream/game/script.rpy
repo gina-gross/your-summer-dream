@@ -24,6 +24,8 @@ image side mc neutral = "side_mona_neutral.png"
 image side mc neutral smile = "side_mona_neutral_smile.png"
 image side mc overjoyed = "side_mona_overjoyed.png"
 image side mc very happy = "side_mona_very_happy.png"
+image side mc wonder = "side_mona_wonder.png"
+image side mc pleasant surprise = "side_mona_pleasant_surprise.png"
 
 # Mitchell #
 define m = Character("Mitchell")
@@ -536,7 +538,7 @@ label prologue_ollie:
     "Oh shit! It's Ollie's dad. He's waving his arms at me trying to catch my attention; I guess one of them noticed me. I think he's saying or shouting something, but I can't understand him."
     "I quickly take off my headphones, probably looking like a deer caught in the headlights."
 
-    mc "Huh?"
+    mc alert "Huh?"
     "Ollie's Dad" "Hey, [mcname]!"
 
     "Now that I noticed them, he starts to wave me over. They're on the opposite side of the street, so I check for cars before doing a light jog over."
@@ -544,7 +546,7 @@ label prologue_ollie:
     "As I get closer, I can see the whole group. {i}There's Ollie's parents with Banana, his older sister, and...{w}Oh shit, that's Ollie!{/i}"
     "My jog breaks out into a short sprint as I run up beside them, looking at Ollie with surprise."
 
-    mc "Oh my god hey, what's up?!"
+    mc pleasant surprise "Oh my god hey, what's up?!"
 
     "I exhale a laugh, partly panting 'cause shit, I'm out of shape. I turn towards the whole group, who look all in good spirits."
 
@@ -558,15 +560,17 @@ label prologue_ollie:
 
     "I gesture at the group. Caroline moved out back while Ollie was in high school, so I don't see them all together around town too much."
 
+    show ollie neutral smile
     o "Yeah, I thought I'd come back."
 
-    mc "How long are you visiting?"
+    mc overjoyed "How long are you visiting?"
 
     "I smile; it's good to see him. Ollie packed up and split for the city a year or two ago. I haven't kept in touch with him as much since he moved away, so it's a total (pleasant!) surprise to run into him."
 
+    show ollie awk
     o "I'm...moving back, actually."
 
-    mc "Oh shit, really?"
+    mc wonder "Oh shit, really?"
 
     "That catches me off guard."
 
@@ -574,40 +578,48 @@ label prologue_ollie:
 
     "Ollie gives a quick laugh."
 
+    show ollie awk laugh # different sprite? unsure
     o "At least for now, yeah, for a little while. While I figure out what's next again."
+    show ollie neutral smile
     o "My sister helped me drive all my stuff."
 
     "He gestures a thumb towards Caroline."
 
     "Caroline" "The big-time was too much for little bro."
-    "Caroline" "I guess he found out that the lonely life isn't so pretty."
+    "Caroline" "I guess he found out that lonely life wasn't so pretty."
 
+    show ollie awk sweat drop # or unimpressed?
     o "Ah, shove it."
 
     "Ollie playfully gives his sister a shove with his shoulder."
 
-    mc "Well, that's awesome. I just graduated but I'm staying in town, I guess also \"at least for now\". I guess I'll see you around??"
+    mc very happy "Well, that's awesome. I just graduated but I'm staying in town, I guess also \"at least for now\". I guess I'll see you around??"
 
+    show ollie happy
     o "Yeah, definitely!"
 
     mc "I'm working at that petting zoo by the beach. You should definitely come by! I'll text you the days I work."
 
+    show ollie amused
     o "Oh, that place?? That's awesome. I bet it's fun."
+    show ollie happy
     o "I probably would have come by anyways; I didn't have an opportunity to touch cute farm animals my whole time in LA."
 
-    mc "Yeah, I actually just got off my first day, haha. But, I think it's going to be fun."
+    mc happy "Yeah, I actually just got off my first day, haha. But, I think it's going to be fun."
 
     "Ollie's Dad" "Haha, well then, it's good that we caught you."
 
-    mc "Yeah, it's great to see you guys."
+    mc amused "Yeah, it's great to see you guys."
 
+    show ollie neutral smile # different?
     o "It's really good to see you, [mcname]."
 
     "Ollie gives me a really heartfelt smile."
 
-    o "I'll catch up with you this week?"
+    show ollie very happy
+    o "We'll catch up this week?"
 
-    mc "Yeah, that sounds great!"
+    mc very happy "Yeah, that sounds great!"
 
     "I happily wave bye to Ollie as he and his family start to walk on. After checking again for cars, I jog back across the street and continue my way home."
 
