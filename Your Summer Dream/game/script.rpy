@@ -4,7 +4,7 @@
 # name of the character.
 
 # Mona #
-define mc = Character("[mcname]", image="mona")
+define mc = Character("[mcname]", image="mc")
 
 image side mc happy = "side_mona_happy.png"
 image side mc alert = "side_mona_alert.png"
@@ -267,9 +267,9 @@ label prologue_stephan:
     s "...{w}Ah, forget it."
     "He exhales."
     show stephan intrigued
-    s "I'd rather correct you to \"Mr. Kaur\", but when I was about to say it, it sounded just as odd."
+    s "I'd rather correct you to \"Mr. Kaur\", but when I was about to say it, that sounded just as odd."
     show stephan confused talking
-    s "Those who've worked here have been family, and it's not like I've had many \"subordinates\". So there's no precedent I'm used to,{w} though referring to my first name seems inappropriately comfortable."
+    s "There's no precedent I'm used to, though referring to my first name seems inappropriately comfortable."
     show stephan amused
     s "But forget it, it's not like this is corporate. It ultimately doesn't matter. I can't really bother to come up with a preferred way to refer to me, so just do what you'd like."
 
@@ -349,7 +349,7 @@ label prologue_stephan:
     mc neutral "So when I'm able to work in the enclosure, will we take turns working there and in the front?"
 
     show stephan neutral
-    s "Yes. Really, I'll deal with whatever needs more attention and give you the other. I'll also call you for assistants or tasks whenever it's needed."
+    s "Yes. Really, I'll deal with whatever needs more attention and give you the other. I'll also call you for assistance or tasks whenever it's needed."
 
     mc happy "Okay, sounds good."
 
