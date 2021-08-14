@@ -3,22 +3,43 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
+# Mona #
 define mc = Character("[mcname]", image="mona")
 
-image side mona happy = "side_mona_happy.png"
+image side mc happy = "side_mona_happy.png"
+image side mc alert = "side_mona_alert.png"
+image side mc amused = "side_mona_amused.png"
+image side mc annoyed = "side_mona_annoyed.png"
+image side mc awk = "side_mona_awk.png"
+image side mc awk laugh sweat drop = "side_mona_awk_laugh_sweat_drop.png"
+image side mc awk sweat drop = "side_mona_awk_sweat_drop.png"
+image side mc confused = "side_mona_confused.png"
+image side mc earnest = "side_mona_earnest.png"
+image side mc earnest talking = "side_mona_earnest_talking.png"
+image side mc intrigued = "side_mona_intrigued.png"
+image side mc intrigued talking = "side_mona_intrigued_talking.png"
+image side mc nervous laugh = "side_mona_nervous_laugh.png"
+image side mc nervous smile = "side_mona_nervous_smile.png"
+image side mc neutral = "side_mona_neutral.png"
+image side mc neutral smile = "side_mona_neutral_smile.png"
+image side mc overjoyed = "side_mona_overjoyed.png"
+image side mc very happy = "side_mona_very_happy.png"
 
+# Mitchell #
 define m = Character("Mitchell")
     # remember to redefine m as "Mitch" when the time comes.
 define dude = Character("Dude Bro")
 # "dude" is for before we know Mitchell's name.
 
+# Stephan #
 define s = Character("Stephan")
 define zoo = Character("Zoo Supervisor")
 # "zoo" is for before we know Stephan's name.
 
+# Ollie #
 define o = Character("Ollie")
 
-#######################
+################################################################################
 
 # The game starts here.
 
@@ -142,10 +163,8 @@ label prologue_stephan:
     scene #petting zoo
     with fade
 
-    show mona earnest
-    mc "Um, yeah, the name's [mcname]. We talked on the phone?"
+    mc earnest "Um, yeah, the name's [mcname]. We talked on the phone?"
 
-    hide mona
     show stephan neutral
     zoo "Right. So you want to... work at the petting zoo?"
 
@@ -153,22 +172,15 @@ label prologue_stephan:
     "{i}I don't know what it is, but the way he said that felt weird. Judgy?{/i}"
     "{i}That doesn't seem right, considering... this is HIS petting zoo...{/i}"
 
-    hide stephan
-    show mona nervous laugh
-    mc "Uh, yeah. Is there... a problem?"
+    mc nervous laugh "Uh, yeah. Is there... a problem?"
 
-    hide mona
-    show stephan neutral
     zoo "Oh, no. I'm just used to working alone."
     # "i just haven't worked with many people outside my family"? idk
 
     "The zoo supervisor is going through the papers, not making much eye contact with me."
 
-    hide stephan
-    show mona alert
-    mc "Oh, um... Is there not... other staff?"
+    mc alert "Oh, um... Is there not... other staff?"
 
-    hide mona
     show stephan unimpressed
     zoo "Does this look like a particularly large enterprise?"
 
@@ -183,40 +195,25 @@ label prologue_stephan:
 
     "He looks at me, perhaps pointedly?"
 
-    hide stephan
-    show mona intrigued talking
-    mc "Or... part-timer?"
+    mc intrigued talking "Or... part-timer?"
 
-    hide mona
-    show stephan neutral
     zoo "Right."
 
     "There's a silence."
 
-    hide stephan
-    show mona intrigued
-    mc "So... I'll just be working with you?"
+    mc intrigued "So... I'll just be working with you?"
 
-    hide mona
-    show stephan neutral
     zoo "Well, you'll still be working with the local farmers and other points of contact here."
 
-    hide stephan
-    show mona neutral smile
-    mc "But as far as the day-to-day goes? Working with the animals and the guests?"
+    mc neutral smile "But as far as the day-to-day goes? Working with the animals and the guests?"
 
-    hide mona
-    show stephan neutral
     zoo "Yes."
 
-    hide stephan
-    show mona very happy
-    mc "Sounds fun."
+    mc very happy "Sounds fun."
 
-    show mona happy
+    # mc happy
     "I smile to him, not being sarcastic. He doesn't seem too impressed."
 
-    hide mona
     show stephan unimpressed talking
     zoo "...Indeed."
     show stephan neutral
@@ -225,17 +222,12 @@ label prologue_stephan:
 
     "I glance down at the sheets he's handed to me. I see his name: Stephan Kaur."
 
-    hide stephan
-    show mona happy
-    mc "No... I don't think so. We'll cover most of it on my first day, right?"
+    mc happy "No... I don't think so. We'll cover most of it on my first day, right?"
 
-    hide mona
     show stephan happy
     s "Yes. I'll show you around the enclosure and tell you how to tend to the animals as well as dealing with children, along with more administrative work."
 
-    hide stephan
-    show mona overjoyed
-    mc "Oh, well, I don't think you have to worry about the children. I love kids, I'm really great with them. I have some experience as a nanny."
+    mc overjoyed "Oh, well, I don't think you have to worry about the children. I love kids, I'm really great with them. I have some experience as a nanny."
 
     scene #nannying cg
     with fade
@@ -250,42 +242,27 @@ label prologue_stephan:
     s "Well, alright then. But I see you don't have previous experience working with animals, so you'll have to go through training as well as learning how the zoo runs."
     s "And I'm certain we'll be requested for several events during the summer, so as those approach, I'll have to prepare you for them as well."
 
-    hide stephan
-    show mona amused
-    mc "Sounds good."
+    mc amused "Sounds good."
 
     "I smile again, trying to show that I'm eager."
 
-    hide mona
-    show stephan neutral
     s "..."
 
-    hide stephan
-    show mona nervous laugh
-    mc "...I look forward to it."
+    mc nervous laugh "...I look forward to it."
 
-    hide mona
-    show stephan neutral
     s "...Alright. Well, we'll be in contact. I'll see you on your first day."
 
-    hide stephan
-    show mona very happy
-    mc "Alright. Thank you, Stephan!"
+    mc very happy "Alright. Thank you, Stephan!"
 
-    hide mona
     show stephan confused
     s "..."
 
-    hide stephan
-    show mona confused # change to a better sprite
-    mc "..."
-    show mona intrigued talking
-    mc "...Mr. Kaur?"
+    mc confused "..." # change to a better sprite?
+    mc intrigued talking "...Mr. Kaur?"
 
     "I can't tell if calling him by his first name came off to him as too informal or familiar. But I mean, we're basically going to be coworkers."
     "He's not that much older than me, so calling him \"Mr. Kaur\" just seems weird. But I mean hey, if he prefers that, I'll absolutely be respectful."
 
-    hide mona
     show stephan annoyed
     s "...{w}Ah, forget it."
     "He exhales."
@@ -299,14 +276,10 @@ label prologue_stephan:
     "{i}Wow, thanks! That was super helpful and totally clear and now I TOTALLY know the right thing to call you. \*Sighs\*{/i}"
     # ^ rewrite this?
 
-    hide stephan
-    show mona awk laugh sweat drop
-    mc "Uh... thanks..... Mr. Kaur?"
+    mc awk laugh sweat drop "Uh... thanks..... Mr. Kaur?"
 
-    show mona awk sweat drop
-    "That still feels weird, but I'm just playing it safe."
+    mc awk sweat drop "{i}(That still feels weird, but I'm just playing it safe.){/i}"
 
-    hide mona
     show stephan happy
     "Mr. Kaur?" "Sure."
 
@@ -329,7 +302,7 @@ label prologue_stephan:
     "And when a kid unexpectedly gets the chance to pet cute animals, and they're already hyped because of the beach, you {i}know{/i} they're dragging their parents there."
     "It's a rather nice little ecosystem, when you think about it."
 
-    "{i}It's funny, that guy at the zoo doesn't really seem like someone who's exactly great with kids. I guess he comes off as the type of guy who might not like them?{/i}"
+    "{i}It's funny, that guy at the zoo doesn't really seem like someone who's exactly great with kids.{/i}"
     "{i}But kids are probably who he encounters the most at his job, so I don't know, I guess he makes it work.{/i}"
 
     "Anyway, even if I won't exactly be spending by time on the beach while I'm working, it'll be nice just to be around the lively people and salty air."
@@ -337,6 +310,7 @@ label prologue_stephan:
     "Even if I spend the summer busy doin' nothing, I think it's gonna be great."
 
     #######################################
+
     scene # some bg
     with fade
     # a few days later
@@ -355,46 +329,32 @@ label prologue_stephan:
     "{i}Bleh, I don't really want to spend time off the clock working on more training.{i}"
     "But whatever, an extra hour or whatever each day to spend time with the animals sounds kinda fun."
 
-    hide stephan
-    show mona happy
-    mc "Awesome! Thanks so much."
+    mc happy "Awesome! Thanks so much."
 
-    hide mona
     show stephan intrigued
     s "Thanks for what?"
     #raised eyebrow or whatever
 
-    hide stephan
-    show mona nervous laugh
-    mc "Uh, I dunno... Showing me the ropes and everything?"
-    show mona nervous smile
-    "{i}I don't know, I'm just being polite, dude! Just say \"no problem\" or \"see you tomorrow\" or something!"
+    mc nervous laugh "Uh, I dunno... Showing me the ropes and everything?"
+    mc nervous smile "{i}(I don't know, I'm just being polite, dude! Just say \"no problem\" or \"see you tomorrow\" or something!){/i}"
 
     "He just looks confused."
 
-    hide mona
     show stephan neutral
     s "Well, yes, it's the job."
 
     "{i}God, this fucking guy.{/i} Whatever."
 
-    hide stephan
-    show mona annoyed
-    mc "Ugh, whatever."
-    show mona neutral
-    mc "So when I'm able to work in the enclosure, will we take turns working there and in the front?"
+    mc annoyed "Ugh, whatever."
+    mc neutral "So when I'm able to work in the enclosure, will we take turns working there and in the front?"
 
-    hide mona
     show stephan neutral
     s "Yes. Really, I'll deal with whatever needs more attention and give you the other. I'll also call you for assistants or tasks whenever it's needed."
 
-    hide stephan
-    show mona happy
-    mc "Okay, sounds good."
+    mc happy "Okay, sounds good."
 
     "{i}Kind of boring, but really doesn't sound too demanding. I think the work will be straightforward, it sounds like he'll deal with the stuff that's actually hard. That's pretty nice.{/i}"
 
-    hide mona
     show stephan happy
     s "Well then, let's open up."
 
@@ -427,29 +387,21 @@ label prologue_mitchell:
     show mitchell happy
     dude "Hey, little tomboy."
 
-    hide mitchell
-    show mona confused
-    mc "...{w} Excuse me?"  # mona confused sprite? awk laugh sweat drop?
+    mc confused "...{w} Excuse me?"  # mona confused sprite? awk laugh sweat drop?
     "{i}I don't mean it like I'm offended, I'm just... what does that even mean??{/i}"
 
     "The guy laughed a little, affably."
 
-    hide mona
     show mitchell cheerful
     dude "Oh, sorry. You just reminded me of something."
     show mitchell neutral smile
     dude "I like your shirt."
 
-    hide mitchell
-    show mona nervous smile
-    mc "Uh, thanks."
-    show mona awk laugh sweat drop
-    mc "I like your... shorts?"
+    mc nervous smile "Uh, thanks."
+    mc awk laugh sweat drop "I like your... shorts?"
 
-    show mona awk
     "I had to peer over the desk a little to be able to actually see anyone's legs. He's wearing, like... deck shorts, but I like the color."
 
-    hide mona
     show mitchell intrigued # maybe amused or happy sprite instead?
     dude "Hey, thanks."
 
@@ -462,15 +414,11 @@ label prologue_mitchell:
     show mitchell neutral smile # is there a better sprite for this?
     dude "Uh, can we have six tickets?"
 
-    hide mitchell
-    show mona happy
-    mc "Um, sure. You guys will have to wait a little bit since you're a larger group."
-    show mona neutral smile
-    mc "If you just wait over there for a few minutes, I'll call you over when we're ready."
+    mc happy "Um, sure. You guys will have to wait a little bit since you're a larger group."
+    mc neutral smile "If you just wait over there for a few minutes, I'll call you over when we're ready."
 
     "I point to a nearby bench outside, our unofficial waiting area."
 
-    hide mona
     show mitchell happy
     dude "Sweet. Thanks."
 
@@ -483,22 +431,18 @@ label prologue_mitchell:
     "I take the money, punching into the till and printing off the tickets."
 
     hide mitchell
-    show mona neutral smile
-    mc "Alright, here you go."
+    mc neutral smile "Alright, here you go."
 
     "I hand him off the tickets."
 
     mc "What name should I call for you guys?"
 
-    hide mona
     show mitchell neutral smile
-    dude "Mitchell's fine."
+    dude "Wilson's fine."
 
     hide mitchell
-    show mona happy
-    mc "Alright Mitchell, well thanks for coming by the zoo. Your group should be able to go in pretty soon, about 5-10 minutes."
+    mc happy "Alright Wilson, well thanks for coming by the zoo. Your group should be able to go in pretty soon, about 5-10 minutes."
 
-    hide mona
     show mitchell very happy # make new sprite -- smiling with teeth
     "He gives me a bright smile before heading towards the bench with his friends. I awkwardly smile back."
 
@@ -512,13 +456,10 @@ label prologue_mitchell:
 
     "I open the gate-door-thing by the front desk area, walking out to approach the group. They seem to be happily talking and joking around."
 
-    show mona intrigued talking
-    mc "Mitchell?"
+    mc intrigued talking "Wilson?"
 
-    show mona intrigued
-    "I can't tell if they heard me. I look around to the friends."
+    mc intrigued "{i}(I can't tell if they heard me. I look around to the friends.){/i}"
 
-    hide mona
     "Dude Friend" "Hey, Mitch, I think she's talking to you."
 
     "The guy from before was distracted in a conversation, but he quickly turns around."
@@ -527,39 +468,30 @@ label prologue_mitchell:
     m "Oh yeah, hey! Sorry."
 
     hide mitchell
-    show mona earnest talking
-    mc "You guys can go in now."
+    mc earnest talking "You guys can go in now."
 
     "He stands up with another bright smile. It seems genuine, but the guy's still a little much."
 
-    hide mona
     show mitchell overjoyed
     m "Awesome, thanks!"
 
     hide mitchell
     "I notice that they start looking around at their surfboards, unsure what to do with them."
 
-    show mona neutral smile
-    mc "I can keep your boards right behind the desk. Just come back for them once you leave, alright?"
+    mc neutral smile "I can keep your boards right behind the desk. Just come back for them once you leave, alright?"
 
-    hide mona
     show mitchell neutral smile
     m "Excellent. Thanks. Hey, I'll help walk them up with you."
 
-    hide mitchell
-    show mona happy
-    mc "Alright, thanks."
+    mc happy "Alright, thanks."
 
     "I smile, appreciative of the help. I'm definitely kinda small; it would have taken me a couple trips to carry them all."
-    hide mona
     "I take two boards under my arms while he grabs the others. We walk back up toward the desk, where I open the gate with my foot and we place the boards up against the wall. I dust off my hands."
 
-    show mona happy
-    mc "Alright, well, I hope y'all have fun. Stephan should be able to help you if you guys have any questions while you're there."
+    mc happy "Alright, well, I hope y'all have fun. Stephan should be able to help you if you guys have any questions while you're there."
 
     "Mitchell smiles at me again. I guess it must naturally just be bright. I guess I'm a little more used to it now after constant exposure, and it's a little endearing."
 
-    hide mona
     show mitchell very happy
     m "Thanks, [mcname]."
 
